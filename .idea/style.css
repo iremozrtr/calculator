@@ -11,8 +11,8 @@ body {
 color:darkgoldenrod;
     font-size: 32px;
    position: absolute;
-    padding-bottom: 120px;
-    padding-right: 144px;
+    padding-bottom: 42px;
+    padding-right: 8px;
 }
 .card-body{
     width: 350px;
