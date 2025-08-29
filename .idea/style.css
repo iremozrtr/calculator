@@ -1,0 +1,63 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+
+}
+.Calculator{
+color:darkgoldenrod;
+    font-size: 32px;
+   position: absolute;
+    padding-bottom: 28px;
+}
+.card-body{
+    width: 350px;
+    height: 300px;
+    background-color: rgba(241, 233, 203, 0.97);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border:2px solid darkgoldenrod;
+
+}
+
+.card-body .values{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-body .values input {
+    background-color: #6c2941;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid rgba(0, 89, 255, 0.97);
+    border-radius: 4px;
+}
+
+.operator{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.operator button{
+    background-color: #3f8742;
+    color: #000000;
+    font-size: 18px;
+    width:70px;
+    height: 60px;
+    cursor: pointer;
+}
