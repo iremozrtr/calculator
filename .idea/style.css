@@ -1,8 +1,10 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
     height: 90vh;
     position: relative;
 
@@ -10,7 +12,7 @@ body {
 .Calculator{
 color:darkgoldenrod;
     font-size: 32px;
-   position: absolute;
+
     padding-bottom: 42px;
     padding-right: 8px;
 }
@@ -61,4 +63,21 @@ color:darkgoldenrod;
     width:70px;
     height: 60px;
     cursor: pointer;
+}
+.asal {
+    width: 339px;
+    margin-top: 10px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 9px;
+    border: 2px solid darkgoldenrod;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:rgba(241, 233, 203, 0.97);
+}
+
+.asal-text {
+    margin: 0;
+    color: darkgreen;
+    font-size: 18px;
+    font-weight: bold;
 }
