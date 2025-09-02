@@ -30,7 +30,20 @@
         }
         return true;
     }
-
+    function numberValidation(number){
+        if (!isNaN(number)) {
+            if (number % 1 === 0) {
+                const isResultPrime = isPrime(number);
+                if (isResultPrime) {
+                    asalText.textContent='is a prime number.';
+                } else {
+                    asalText.textContent='is not a prime number. ';
+                }
+            } else {
+                asalText.textContent='prime number check is not working.';
+            }
+        }
+    }
 
     function Addition(num1,num2) {
         return num1+num2;
@@ -40,18 +53,7 @@
         const num2 = parseFloat(number2Input.value) ;
         const addNumber = num1 + num2;
         changeResult(addNumber);
-    if (!isNaN(addNumber)) {
-        if (addNumber % 1 === 0) {
-            const isResultPrime = isPrime(addNumber);
-            if (isResultPrime) {
-                asalText.textContent='is a prime number.';
-            } else {
-                asalText.textContent='is not a prime number. ';
-            }
-        } else {
-            asalText.textContent='prime number check is not working.';
-        }
-    }
+     numberValidation(addNumber);
 
     });
 
@@ -64,18 +66,7 @@
         const num2 = parseFloat(number2Input.value) ;
         const substractNumber = num1 - num2;
         changeResult(substractNumber);
-    if (!isNaN(substractNumber)) {
-        if (substractNumber % 1 === 0) {
-            const isResultPrime = isPrime(substractNumber);
-            if (isResultPrime) {
-                asalText.textContent='is a prime number.';
-            } else {
-                asalText.textContent='is not a prime number. ';
-            }
-        } else {
-            asalText.textContent='prime number check is not working.';
-        }
-    }
+       numberValidation(substractNumber);
 
 
     });
@@ -92,15 +83,7 @@
         const num2 = parseFloat(number2Input.value) ;
         const multiplyNumber = num1 * num2;
         changeResult(multiplyNumber);
-        if (!isNaN(multiplyNumber)) {
-            if (isResultPrime) {
-                asalText.textContent='is a prime number.';
-            } else {
-                asalText.textContent='is not a prime number. ';
-            }
-        } else {
-            asalText.textContent='prime number check is not working.';
-        }
+        numberValidation(multiplyNumber);
 
 
 
@@ -115,18 +98,7 @@
         const dividedNumber = Divide(num1, num2);
         changeResult(dividedNumber);
 
-        if (!isNaN(dividedNumber)) {
-            if (dividedNumber % 1 === 0) {
-                const isResultPrime = isPrime(dividedNumber);
-                if (isResultPrime) {
-                    asalText.textContent='is a prime number.';
-                } else {
-                    asalText.textContent='is not a prime number. ';
-                }
-            } else {
-                asalText.textContent='prime number check is not working.';
-            }
-        }
+        numberValidation(dividedNumber);
 
     });
 
